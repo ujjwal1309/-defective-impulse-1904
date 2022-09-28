@@ -1,0 +1,146 @@
+.navbar {
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* .sticky + .content {
+  padding-top: 60px;
+} */
+
+.navbar > div {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
+  background: white;
+}
+
+.navbar > div > div > img {
+  height: 80%;
+  cursor: pointer;
+}
+
+.navbar > div > div {
+  margin-top: 20px;
+}
+
+.navbar > div > div > input {
+  width: 300px;
+  height: 100%;
+  border: 0;
+}
+
+.navbar > div > div > input:focus {
+  outline: none;
+}
+
+.navbar > div > div:nth-child(2) {
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.79);
+  padding: 0 10px;
+  margin-top: 30px;
+  background-color: white;
+}
+
+.account {
+  width: 200px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.account > div {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-II {
+  background: white;
+}
+
+.navbar-II > ul {
+  display: flex;
+  list-style: none;
+  padding: 0px 0px 0px 120px;
+  gap: 30px;
+  opacity: 0.7;
+}
+
+.navbar-II > ul > li {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 0 5px;
+}
+
+.navbar-II > ul > li:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.brands {
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  background: white;
+  display: none;
+}
+
+.brands > div {
+  display: flex;
+  /* color: rgba(0, 0, 0, 0.719); */
+}
+
+.brands > div > div > ul {
+  display: flex;
+  list-style: none;
+  /* gap: 20px; */
+}
+
+.brands > div > div > ul > li {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.brands > div > div > ul > li:hover {
+  background-color: rgba(0, 0, 0, 0.315);
+}
+
+.brands > div:nth-child(1) {
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.712);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.715);
+}
+
+.brands > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.brands > div > div > p:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.324);
+}
+
+.brands.brands-show {
+  opacity: 1;
+  pointer-events: auto;
+  display: block;
+}
+
+.content {
+  height: 1000px;
+  border: 1px solid green;
+}

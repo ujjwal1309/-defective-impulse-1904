@@ -1,0 +1,107 @@
+.promotion {
+  display: flex;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.708);
+  gap: 40px;
+  padding: 20px 0;
+  background-color: #f2f2f2;
+}
+
+.promotion > div {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.sale-add {
+  width: 80%;
+  margin: 20px auto;
+  background-color: rgba(0, 0, 0, 0.712);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.sale-add > h3 {
+  text-align: center;
+}
+
+.sale-add:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.shop-by-category {
+  height: auto;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.Category-container {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 200px;
+}
+
+.Category-container > div {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.Category-container > div:hover {
+  opacity: 1;
+}
+
+.Category-container > div > img {
+  height: 100%;
+}
+
+.trending-offer{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
+
+.trending-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.trending-container>div{
+    cursor: pointer;
+}
+
+.trending-container>div>img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.trending-container>div>img+p{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.trending-container>div>p+p{
+    color: rgba(0, 0, 0, 0.719);
+    margin: 10px 0;
+}
+
+.trending-container>div>button{
+    height: 50px;
+    width: 125px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.703);
+    color: rgba(0, 0, 0, 0.687);
+    margin-top: 10px;
+}
+
+.trending-container>div>button:hover{
+    background-color: rgba(0, 255, 255, 0.231);
+}
