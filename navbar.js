@@ -1,17 +1,17 @@
 
-var navbar=document.querySelector(".navbar");
-var help=document.querySelector(".help")
+// var navbar=document.querySelector(".navbar");
+// var help=document.querySelector(".help")
 
-window.onscroll=function(){
-    if(window.pageYOffset >= help.offsetTop)
-    {
-        navbar.classList.add("sticky")
-    }
-    else
-    {
-        navbar.classList.remove("sticky")
-    }
-}
+// window.onscroll=function(){
+//     if(window.pageYOffset >= help.offsetTop)
+//     {
+//         navbar.classList.add("sticky")
+//     }
+//     else
+//     {
+//         navbar.classList.remove("sticky")
+//     }
+// }
 
 
 document.querySelector("#search").addEventListener("mouseover",blur);
