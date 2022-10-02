@@ -1,45 +1,243 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.help{
-    height: 32px;
-    background: #f2f2f2;
+.help {
+  height: 32px;
+  background: #f2f2f2;
 }
 
-.help>div{
-    width: 90%;
-    margin: auto;
-    /* border: 1px solid red; */
-    height: 100%;
-    display: flex;
-    gap: 40px;
-    justify-content: flex-end;
+.help > div {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
 }
 
-.help >div>button{
-    height: 100%;
-    cursor: pointer;
-    border: 0;
-    opacity: 0.7;
+.help > div > button {
+  height: 100%;
+  cursor: pointer;
+  border: 0;
+  opacity: 0.7;
 }
 
-.help >div>button>img{
-    height: 70%;
-    width: 30%;
-    border-radius: 50%;
+.help > div > button > img {
+  height: 70%;
+  width: 30%;
+  border-radius: 50%;
 }
 
-.help>div>ul{
-    list-style: none;
+.help > div > ul {
+  list-style: none;
 }
-.help a{
-    text-decoration: none;
-    color: black;
-    opacity: 0.7;
+.help a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
 }
 
-.help ul{
-    padding-top: 10px;
+.help ul {
+  padding-top: 10px;
+}
+
+.promotion {
+  display: flex;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.708);
+  gap: 40px;
+  padding: 20px 0;
+  background-color: #f2f2f2;
+}
+
+.promotion > div {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.sale-add {
+  width: 90%;
+  margin: 20px auto;
+  background-color: rgba(0, 0, 0, 0.712);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.sale-add > h3 {
+  text-align: center;
+}
+
+.sale-add:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.contact-us {
+  height: 200px;
+  width: 100%;
+  margin: 50px auto 0;
+  display: flex;
+  border-top: 1px solid black;
+}
+
+.contact-us > div {
+  height: auto;
+  width: 35%;
+  margin: auto;
+  /* border: 1px solid red; */
+  padding: 20px;
+}
+
+.contact-us > div > p {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.contact-us > div > button {
+  margin: 20px 0;
+  height: 50px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.797);
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-us > div > button:hover {
+  background-color: rgba(0, 255, 255, 0.406);
+  color: rgba(0, 0, 0, 0.674);
+}
+
+.contact-us > div > img {
+  height: 40px;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.contact-us > div > img:hover {
+  opacity: 0.7;
+}
+
+.help-information {
+  width: 90%;
+  height: auto;
+  /* border: 1px solid red; */
+  margin: auto;
+  display: flex;
+}
+
+.help-information > div {
+  height: 100%;
+  width: 45%;
+  margin: auto;
+  /* border: 1px solid green; */
+  /* padding: 20px 0; */
+}
+
+.help-information > div:nth-child(1) {
+  border-top: 2px solid rgba(0, 0, 0, 0.557);
+  padding: 30px 0;
+}
+
+.help-information > div > p:nth-child(1) {
+  font-weight: bold;
+  color: black;
+  cursor: auto;
+}
+
+.help-information > div > p:nth-child(1):hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.help-information > div > p {
+  color: rgba(0, 0, 0, 0.694);
+  width: 50%;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.help-information > div > p:hover {
+  background-color: rgba(0, 0, 0, 0.263);
+}
+
+.help-information > div > p > i {
+  color: black;
+  margin-right: 10px;
+}
+
+.information {
+  display: flex;
+}
+
+.information > div {
+  height: 100%;
+  width: 30%;
+  margin: auto;
+  /* border: 1px solid teal; */
+  border-top: 2px solid rgba(0, 0, 0, 0.568);
+  padding-top: 10px;
+}
+
+.information > div > p:nth-child(1) {
+  font-weight: bold;
+  color: black;
+}
+
+.information > div > p:nth-child(1):hover {
+  cursor: auto;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.help-information > div > p:nth-child(7):hover {
+  cursor: auto;
+  background-color: #f2f2f200;
+}
+
+.information > div > p {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  color: rgba(0, 0, 0, 0.765);
+  padding: 10px;
+}
+
+.information > div > p:hover {
+  background-color: rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+}
+
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.646);
+  margin-top: 50px;
+  height: auto;
+  display: flex;
+}
+.footer > div {
+  height: 100%;
+  width: 40%;
+  margin: auto;
+  /* border: 1px solid green; */
+  padding: 50px;
+}
+
+.footer > div > h1 {
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.808);
+}
+
+.footer > div > p {
+  color: rgba(0, 0, 0, 0.808);
+}
+
+.footer > div > img {
+  height: 60px;
+  margin: 20px 20px 0 0;
 }

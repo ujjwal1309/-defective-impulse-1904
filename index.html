@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -32,7 +32,7 @@
     <div class="navbar">
         <div>
             <div>
-                <img src="data:image/png;base64,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"
+                <img id="logo" src="data:image/png;base64,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"
                     alt="">
             </div>
             <div>
@@ -54,7 +54,7 @@
             <ul>
                 <li id="brand">Brands</li>
                 <li>The Holiday Edit</li>
-                <li>Sale</li>
+                <li id="sale-page"> Sale</li>
                 <li>Skin Care</li>
                 <li>Hair</li>
                 <li>Makeup</li>
@@ -67,44 +67,6 @@
                 <li>Advice</li>
             </ul>
         </nav>
-    </div>
-    <div class="brands">
-        <div>
-            <div>
-                <ul>
-                    <li>0-9</li>
-                    <li>A</li>
-                    <li>B</li>
-                    <li>C</li>
-                    <li>D</li>
-                    <li>E</li>
-                    <li>F</li>
-                    <li>G</li>
-                    <li>H</li>
-                    <li>I</li>
-                    <li>J</li>
-                    <li>K</li>
-                    <li>L</li>
-                    <li>M</li>
-                    <li>N</li>
-                    <li>O</li>
-                    <li>P</li>
-                    <li>Q</li>
-                    <li>R</li>
-                    <li>S</li>
-                    <li>T</li>
-                    <li>U</li>
-                    <li>V</li>
-                    <li>W</li>
-                    <li>X</li>
-                    <li>Y</li>
-                    <li>Z</li>
-                </ul>
-            </div>
-            <div>
-                <p> View all brands</p>
-            </div>
-        </div>
     </div>
     <div class="promotion">
         <div>
@@ -127,6 +89,90 @@
 
     <div class="sale-add">
         <h2>Mid-week Flash Sale - Enjoy 20% off when you use code Treat at the cart | SHOP NOW > </h2>
+    </div>
+
+    <div class="holiday-edit">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/08/0905-STDCRE-40981-SS-EF-Sept-Batch-Priority-Shot05-1180x450-023008.jpg"
+                        alt="">
+                    <div>
+                        <p>optimize your</p>
+                        <h1>BEAUTY</h1>
+                        <h1>ROUTINE</h1>
+                        <p>Enjoy 15% off when you use code <b>SS15</b> at the cart.</p>
+                        <p>1== Plus, receive a free BABOR x SkinStore Exclusive Ampoule Discovery set (Worth $30) when
+                            you spend $150 or more on your purchase.</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/31/0916-41217-SS-AH-SkinStore-Sept-Batch-THG0035127-Shot04-1180x450-030331.jpg"
+                        alt="">
+                    <div>
+                        <p>NATIONAL</p>
+                        <h1></h1>
+                        <h1>hair day</h1>
+                        <p>Get a head of National Hair Day (10/1) and shop our list of must have for slaon-worthy,
+                            hydrated strands all year long.</p>
+                        <p>Plus, receive a free BABOR x SkinStore Exclusive Ampoule Discovery set (Worth $30) when you
+                            spend $150 or more on your purchase.</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/10/original-New_Project_%283%29-085610.jpg"
+                        alt="">
+                    <div>
+                        <p>the</p>
+                        <h1>HOLIDAY</h1>
+                        <h1>EDIT</h1>
+                        <p>Featuring 12 full & deluxe size skin care products, the Holiday Edit is filled with $670
+                            worth of must haves for just $149. Join the waitlist now.</p>
+                        <p></p>
+                        <button>JOIN THE WAITLIST</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/34/0913-41217-LF-AH-SkinStore-Sept-Batch-THG0035127-Shot031180x450-021234.jpg"
+                        alt="">
+                    <div>
+                        <p>we've got</p>
+                        <h1>AN APP</h1>
+                        <h1></h1>
+                        <p></p>
+                        <p>Download our APP and turn on notification to get tommorrows exclusive offer. Trust us, you
+                            don't want to miss it.</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/54/0830-STDCRE-40753-WC-SS-Fragrance-GWP-Assets-1180x450-053654.jpg"
+                        alt="">
+                    <div>
+                        <p></p>
+                        <h1>FRAGRANCE</h1>
+                        <h1></h1>
+                        <p>Discover splurge-worthy and wallet friendly fragrances for every mood.</p>
+                        <p>Receive a 10-piece muti-brand Fragrance Gift (worth $69) when you spend $100 or more on any
+                            fragrance.</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
     </div>
 
     <div class="shop-by-category">
@@ -276,28 +322,37 @@
         <h1>Over On The Blog...</h1>
         <div class="blog-container">
             <div>
-                <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/06/original-SkinC_Ferulic-034413-012406.jpg" alt="">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/06/original-SkinC_Ferulic-034413-012406.jpg"
+                    alt="">
                 <p>SkinCeuticals: Vitamin C Beyond The Face</p>
-                <p>SkinCeuticals believes in celebrating the skin-protective and rejuvenating powers of vitamin C every day, but this year they’re making sure your eyes and lips get in on the antioxidant action (and benefits).</p>
+                <p>SkinCeuticals believes in celebrating the skin-protective and rejuvenating powers of vitamin C every
+                    day, but this year they’re making sure your eyes and lips get in on the antioxidant action (and
+                    benefits).</p>
                 <button>READ MORE</button>
             </div>
             <div>
-                <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/51/original-0224-STDCRE-32153-SS-BME-Skinstore-March-2022-Photography-Batching-Shot_13-500x500-023351.jpg" alt="">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/51/original-0224-STDCRE-32153-SS-BME-Skinstore-March-2022-Photography-Batching-Shot_13-500x500-023351.jpg"
+                    alt="">
                 <p>Which TriPollar Device is Right for You?</p>
-                <p>In 2008, TriPollar launched themselves into the home beauty sphere with an aim to innovate the technology behind at-home treatments and devices.</p>
+                <p>In 2008, TriPollar launched themselves into the home beauty sphere with an aim to innovate the
+                    technology behind at-home treatments and devices.</p>
                 <button>READ MORE</button>
             </div>
             <div>
-                <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/16/original-NB-IMAGE-5---2022-SKINSTORE-LANDING-PAGE-025016.jpg" alt="">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/16/original-NB-IMAGE-5---2022-SKINSTORE-LANDING-PAGE-025016.jpg"
+                    alt="">
                 <p>Discover Natura Bisse'</p>
-                <p>With an aim to help their clients’ skin as they age and to turn their daily skin care routines into a moment of real self-care, Natura Bissé works to discover the latest scientific advancements and adapt them to the wellness industry.</p>
+                <p>With an aim to help their clients’ skin as they age and to turn their daily skin care routines into a
+                    moment of real self-care, Natura Bissé works to discover the latest scientific advancements and
+                    adapt them to the wellness industry.</p>
                 <button>READ MORE</button>
             </div>
         </div>
     </div>
 
     <div class="beauty-advisor">
-        <img src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/32/original-0308-STDCRE32346-SS-AH-SkinStore-Concierge-Banners-1180x200-084632.jpg" alt="">
+        <img src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/32/original-0308-STDCRE32346-SS-AH-SkinStore-Concierge-Banners-1180x200-084632.jpg"
+            alt="">
     </div>
 
     <div class="contact-us">
@@ -307,7 +362,11 @@
         </div>
         <div>
             <p>Connect with us</p>
-            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt=""><img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt=""><img src="https://cdn-icons-png.flaticon.com/128/3670/3670151.png" alt=""><img src="https://cdn-icons-png.flaticon.com/128/145/145808.png" alt=""><img src="https://cdn-icons-png.flaticon.com/128/3670/3670166.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt=""><img
+                src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt=""><img
+                src="https://cdn-icons-png.flaticon.com/128/3670/3670151.png" alt=""><img
+                src="https://cdn-icons-png.flaticon.com/128/145/145808.png" alt=""><img
+                src="https://cdn-icons-png.flaticon.com/128/3670/3670166.png" alt="">
         </div>
     </div>
 
@@ -367,11 +426,18 @@
         <div>
             <p>Pay securly with</p>
             <img src="https://cdn-icons-png.flaticon.com/128/349/349221.png" alt="">
-            <img src="https://cdn-icons-png.flaticon.com/128/39/39214.png" alt=""><img src="https://cdn-icons-png.flaticon.com/128/196/196565.png" alt=""><img src="https://cdn-icons-png.flaticon.com/128/196/196572.png" alt=""><img src="https://cdn-icons-png.flaticon.com/128/6124/6124998.png" alt=""><img src="https://cdn-icons-png.flaticon.com/128/5977/5977576.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/128/39/39214.png" alt=""><img
+                src="https://cdn-icons-png.flaticon.com/128/196/196565.png" alt=""><img
+                src="https://cdn-icons-png.flaticon.com/128/196/196572.png" alt=""><img
+                src="https://cdn-icons-png.flaticon.com/128/6124/6124998.png" alt=""><img
+                src="https://cdn-icons-png.flaticon.com/128/5977/5977576.png" alt="">
         </div>
     </div>
 
 </body>
 
 </html>
+
 <script src="navbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
