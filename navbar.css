@@ -1,7 +1,12 @@
 .navbar {
+  /* position: absolute;
+  top: 15%; */
+  width: 100%;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  z-index: 100;
+  /* opacity: 0.1; */
 }
 
 .navbar.sticky {
@@ -87,60 +92,6 @@
   cursor: pointer;
 }
 
-.brands {
-  /* border: 1px solid red; */
-  width: 80%;
-  margin: auto;
-  padding: 20px;
-  opacity: 0;
-  pointer-events: none;
-  background: white;
-  display: none;
-}
-
-.brands > div {
-  display: flex;
-  /* color: rgba(0, 0, 0, 0.719); */
-}
-
-.brands > div > div > ul {
-  display: flex;
-  list-style: none;
-  /* gap: 20px; */
-}
-
-.brands > div > div > ul > li {
-  cursor: pointer;
-  padding: 10px;
-}
-
-.brands > div > div > ul > li:hover {
-  background-color: rgba(0, 0, 0, 0.315);
-}
-
-.brands > div:nth-child(1) {
-  justify-content: space-between;
-  border-top: 1px solid rgba(0, 0, 0, 0.712);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.715);
-}
-
-.brands > div > div {
-  display: flex;
-  align-items: center;
-}
-
-.brands > div > div > p:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.324);
-}
-
-.brands.brands-show {
-  opacity: 1;
-  pointer-events: auto;
-  display: block;
-}
-
 .content {
   height: 1000px;
-  border: 1px solid green;
 }

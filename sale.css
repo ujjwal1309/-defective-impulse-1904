@@ -1,0 +1,109 @@
+body {
+    font-family: "Lato", sans-serif;
+    color: rgba(0, 0, 0, 0.804);
+  }
+
+#home{
+    width: 90%;
+    margin: auto;
+    color: rgba(0, 0, 0, 0.683);
+}
+
+#home>p>a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+#home>p>a:hover{
+    color: rgba(0, 89, 255, 0.473);
+    text-decoration: underline;
+}
+
+.products{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.products>div:nth-child(1){
+    color: rgba(0, 0, 0, 0.676);
+    padding: 20px;
+
+}
+
+.products>div:nth-child(1)>h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: black;
+}
+
+.products>div:nth-child(1)>h1+p{
+    margin-bottom: 10px;
+}
+
+.products>div:nth-child(1)>div{
+    display: flex;
+    margin: 20px 0;
+}
+
+.products>div:nth-child(1)>div>p{
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+.products>div:nth-child(1)>div>select{
+    color: rgba(0, 0, 0, 0.671);
+    width: 200px;
+    height: 40px;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(13, auto);
+    gap: 20px;
+}
+
+.container>div{
+    color: rgba(0, 0, 0, 0.674);
+}
+
+.container>div>img{
+    width: 100%;
+}
+
+.container>div>div{
+    height: 200px;
+}
+
+.container>div>div>p:nth-child(1){
+    color: black;
+    margin: 20px 0;
+}
+
+.container>div>div>p:nth-child(2){
+    width: 220px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.container>div>div>p:nth-child(4){
+    color: black;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.container>div>button{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.779);
+    border: 0;
+    cursor: pointer;
+}
+
+.container>div>button:hover{
+    background-color: rgba(0, 106, 255, 0.511);
+    color: black;
+}

@@ -1,43 +1,49 @@
+var navbar = document.querySelector(".navbar");
+var help = document.querySelector(".help");
 
-// var navbar=document.querySelector(".navbar");
-// var help=document.querySelector(".help")
+window.onscroll = function () {
+  if (window.pageYOffset > help.offsetTop) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+};
 
-// window.onscroll=function(){
-//     if(window.pageYOffset >= help.offsetTop)
-//     {
-//         navbar.classList.add("sticky")
-//     }
-//     else
-//     {
-//         navbar.classList.remove("sticky")
-//     }
-// }
+document.querySelector("#search").addEventListener("mouseover", blur);
+document.querySelector("#search").addEventListener("mouseout", blurNormal);
 
-
-document.querySelector("#search").addEventListener("mouseover",blur);
-document.querySelector("#search").addEventListener("mouseout",blurNormal);
-
-function blur(){
-    var search=document.getElementsByTagName("body")[0];
-    search.style.background="rgba(0,0,0,0.3 )"
+function blur() {
+  var search = document.getElementsByTagName("body")[0];
+  search.style.background = "rgba(0,0,0,0.3 )";
 }
-function blurNormal(){
-    var search=document.getElementsByTagName("body")[0];
-    search.style.background="none";
+function blurNormal() {
+  var search = document.getElementsByTagName("body")[0];
+  search.style.background = "none";
 }
 
-document.querySelector("#brand").addEventListener("mouseover",brand);
-document.querySelector("#brand").addEventListener("mouseout",brandClose);
+document.querySelector("#brand").addEventListener("mouseover", brand);
+document.querySelector("#brand").addEventListener("mouseout", brandClose);
 
-
-function brand(){
-    document.querySelector(".brands").classList.add("brands-show");
-    var search=document.getElementsByTagName("body")[0];
-    search.style.background="rgba(0,0,0,0.3 )"
+function brand() {
+  document.querySelector(".brands").classList.add("brands-show");
+  var search = document.getElementsByTagName("body")[0];
+  search.style.background = "rgba(0,0,0,0.3 )";
 }
 
-function brandClose(){
-    document.querySelector(".brands").classList.remove("brands-show");
-    var search=document.getElementsByTagName("body")[0];
-    search.style.background="none";
+function brandClose() {
+  document.querySelector(".brands").classList.remove("brands-show");
+  var search = document.getElementsByTagName("body")[0];
+  search.style.background = "none";
+}
+
+document.getElementById("logo").addEventListener("click",goHome);
+
+function goHome(){
+  window.location.replace("index.html");
+}
+
+document.getElementById("sale-page").addEventListener("click",goSale);
+
+function goSale(){
+  window.location.replace("sale.html")
 }
